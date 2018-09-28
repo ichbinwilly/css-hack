@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Willy.Hsu">
+	<meta name="copyright" content="Willy.Hsu">
+	<title>Flexbox-hack</title>
+</head>
+<style>
+	body {
+  margin: 20px;
+  font-family: "Verdana";
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.562);
+  list-style: height 0.85em;
+  background-color: lightblue;
+}
+
+.space-between {
+  display: flex;
+  width: auto;
+  height: 400px;
+  margin: 10px;
+  vertical-align: top;
+  justify-content: space-around; //平均分配內容元素
+  overflow: hidden;
+}
+
+.flex-item {
+  width: 250px;
+  height: 400px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.each-item {
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.item1 {
+  background: #105187;
+}
+
+.item2 {
+  background: #2c8693;
+}
+
+.item3 {
+  background: #c33325;
+}
+
+.option {
+  font-size: 23px;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.662);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.pricing {
+  font-size: 26px;
+}
+
+.pricing_intro {
+  color: rgba(255, 255, 255, 0.562);
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid;
+}
+
+.flex-column {
+  display: flex;
+
+  border: 2px solid;
+  height: 360px;
+}
+
+.button {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  line-height: normal;
+  font-weight: normal;
+  display: inline block;
+  background: #f19722;
+  margin: 15px;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.flex {
+  flex-grow: 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.item {
+  flex: 0;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+
+</style>
+
+<body>
+		<div class="space-between">
+				<div class="flex-item each-item item1">
+				  <div class="flex">
+					<div class="item">
+					  <div class="option">Free</div>
+					</div>
+					<div class="item">
+					  <div class="title">A Simple and powerful way to get things done.</div>
+					</div>
+					<div class="item">
+					  <div class="pricing">$0</div>
+					</div>
+					<div class="item">
+					  <div class="pricing_intro">Free, forever.</div>
+					</div>
+					<div class="item">
+					  <div class="button">Learn More</div>
+					</div>
+				  </div>
+				</div>
+				<div class="flex-item each-item item2">
+				  <div class="flex">
+					<div class="item">
+					  <div class="option">Business Class</div>
+					</div>
+					<div class="item">
+					  <div class="title">App integrations, learn overviews, and more security.</div>
+					</div>
+					<div class="item">
+					  <div class="pricing">$9.99</div>
+					</div>
+					<div class="item">
+					  <div class="pricing_intro">per user/month (when paid annually)</div>
+					</div>
+					<div class="item">
+					  <div class="button">Upgrade Team</div>
+					</div>
+				  </div>
+				</div>
+				<div class="flex-item each-item item3">
+				  <div class="flex">
+					<div class="item">
+					  <div class="option">Enterprise</div>
+					</div>
+					<div class="item">
+					  <div class="title">For large companies managing multiple teams across Trello.</div>
+					</div>
+					<div class="item">
+					  <div class="pricing">$20.83</div>
+					</div>
+					<div class="item">
+					  <div class="pricing_intro">per user/month (when paid annually)</div>
+					</div>
+					<div class="item">
+					  <div class="button">Contact Us</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+</body>
+
+</html>
